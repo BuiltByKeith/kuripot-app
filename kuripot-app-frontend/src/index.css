@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ---------------------------
+   Default Theme (Light)
+--------------------------- */
+:root {
+  --color-bg: 255 255 255;
+  --color-text: 15 23 42;
+
+  --color-primary: 59 130 246;
+  --color-primary-text: 255 255 255;
+
+  --color-sidebar-bg: 17 24 39;
+  --color-sidebar-hover: 55 65 81;
+}
+
+/* ---------------------------
+   Dark Theme
+--------------------------- */
+:root.dark {
+  --color-bg: 15 23 42;
+  --color-text: 241 245 249;
+
+  --color-primary: 139 92 246;
+  --color-primary-text: 255 255 255;
+
+  --color-sidebar-bg: 30 41 59;
+  --color-sidebar-hover: 51 65 85;
+}
+
+/* ---------------------------
+   Hostinger Theme (Purple Light)
+--------------------------- */
+:root.hostinger {
+  --color-bg: 248 249 255;
+  --color-text: 25 25 28;
+
+  --color-primary: 125 61 255;
+  --color-primary-text: 255 255 255;
+  --color-primary-hover: 94 42 241;
+
+  --color-sidebar-bg: 28 0 68;
+  --color-sidebar-hover: 52 0 128;
+}
+
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.15s ease-out;
+}
